@@ -68,7 +68,7 @@ namespace ee4308::turtle
 
         geometry_msgs::msg::PoseStamped lookahead_pose;
         // Search the global_plan_ vector for a point that is closest to the robot
-        for (geometry_msgs::msg::PoseStamped &pose_in_plan : global_plan_) {
+        for (geometry_msgs::msg::PoseStamped &pose_in_plan : global_plan_.poses) {
             // Get distance from the pose to the robot's current pos
             // Check against the lookahead distance
             double distance = std::hypot(
