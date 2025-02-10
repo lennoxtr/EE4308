@@ -60,13 +60,61 @@ namespace ee4308::turtle
         }
 
         // get goal pose (contains the "clicked" goal rotation and position)
+        // Global_plan_ type is nav_msgs/msg/PoseStamped[]
         geometry_msgs::msg::PoseStamped goal_pose = global_plan_.poses.back();
 
-        // get lookahead?
-        geometry_msgs::msg::PoseStamped lookahead_pose = goal_pose;
+        // Find the point along the path that is closest to the robot.
+        // From the closest point, find the lookahead point
 
-        double linear_vel = 0 * (lookahead_pose.pose.position.x - pose.pose.position.x);
-        double angular_vel = 0 * getYawFromQuaternion(goal_pose.pose.orientation);
+        geometry_msgs::msg::PoseStamped lookahead_pose;
+        // Search the global_plan_ vector for a point that is closest to the robot
+        for (geometry_msgs::msg::PoseStamped &pose_in_plan : global_plan_) {
+            // Get distance from the pose to the robot's current pos
+            // Check against the lookahead distance
+            double distance = std::hypot(
+                pose_in_plan.pose.position.x - pose.pose.position.x,
+                pose_in_plan.pose.position.y - pose.pose.position.y
+            );
+
+            if (distance >= desired_lookahead_dist_) {
+                lookahead_pose = pose_in_plan;
+                break;
+            }
+        }
+
+        // Transform the lookahead point into the robot frame to get (x', y')
+        double delta_x = lookahead_pose.pose.position.x - pose.pose.position.x;
+        double delta_y = lookahead_pose.pose.position.y - pose.pose.position.y;
+
+        double phi_r = getYawFromQuaternion(goal_pose.pose.orientation);
+
+        double x_dash = delta_x * std::cos(phi_r) + delta_y * std::sin(phi_r);
+        double y_dash = delta_y * std::cos(phi_r) - delta_x * std::sin(phi_r);
+
+        // Calculate the curvature c
+        double curvature = (2 * y_dash) / ((x_dash * x_dash) + (y_dash * y_dash));
+
+        // Calc omega from v and c
+        double linear_vel = velocity.linear.x;
+        double angular_vel = linear_vel * curvature;
+
+        // Constrain omega to within the largest allowable angular speed
+        if (std::abs(angular_vel) > max_angular_vel_) {
+            angular_vel = (angular_vel / std::abs(angular_vel)) * max_angular_vel_;
+        }
+
+        // Constrain v to within the largest allowable linear speed
+        if (std::abs(linear_vel) > desired_linear_vel_) {
+            linear_vel = (linear_vel / std::abs(linear_vel)) * desired_linear_vel_;
+        }
+
+        // Return (v, omega)
+
+        // get lookahead?
+        //geometry_msgs::msg::PoseStamped lookahead_pose = goal_pose;
+
+        //double linear_vel = 0 * (lookahead_pose.pose.position.x - pose.pose.position.x);
+        //double angular_vel = 0 * getYawFromQuaternion(goal_pose.pose.orientation);
 
         return writeCmdVel(linear_vel, angular_vel);
     }
