@@ -16,6 +16,8 @@ def generate_launch_description():
     pkg_turtlebot3_cartographer = get_package_share_directory('turtlebot3_cartographer')
     pkg_gazebo_ros = get_package_share_directory('gazebo_ros') 
     
+    print(pkg_gazebo_ros)
+
     # gazebo_launch_path = os.path.join(pkg_turtlebot3_gazebo, 'launch', 'turtlebot3_house.launch.py'),
     cartographer_launch_path = os.path.join(pkg_turtlebot3_cartographer, 'launch', 'cartographer.launch.py'),
 

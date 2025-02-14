@@ -32,7 +32,7 @@ namespace ee4308::turtle
 
         // initialize parameters
         initParam(node_, plugin_name_ + ".desired_linear_vel", desired_linear_vel_, 0.2);
-        initParam(node_, plugin_name_ + ".desired_lookahead_dist", desired_lookahead_dist_, 0.4);
+        initParam(node_, plugin_name_ + ".desired_lookahead_dist", desired_lookahead_dist_, 1.0);
         initParam(node_, plugin_name_ + ".max_angular_vel", max_angular_vel_, 1.0);
         initParam(node_, plugin_name_ + ".max_linear_vel", max_linear_vel_, 0.22);
         initParam(node_, plugin_name_ + ".xy_goal_thres", xy_goal_thres_, 0.05);
@@ -59,34 +59,75 @@ namespace ee4308::turtle
             return writeCmdVel(0, 0);
         }
 
+
         // get goal pose (contains the "clicked" goal rotation and position)
         // Global_plan_ type is nav_msgs/msg/PoseStamped[]
         geometry_msgs::msg::PoseStamped goal_pose = global_plan_.poses.back();
+
+        double distance = std::hypot(
+            goal_pose.pose.position.x - pose.pose.position.x,
+            goal_pose.pose.position.y - pose.pose.position.y
+        );
+
+        if (xy_goal_thres_ > distance) {
+            return writeCmdVel(0, 0);
+        }
+
+        geometry_msgs::msg::PoseStamped closest_pose;
+
+        double previous_distance = 1e9;
+        size_t index_current_pose = 0;
+
+        while (index_current_pose < global_plan_.poses.size()) {
+            closest_pose = global_plan_.poses[index_current_pose];
+
+            double distance = std::hypot(
+                closest_pose.pose.position.x - pose.pose.position.x,
+                closest_pose.pose.position.y - pose.pose.position.y
+            );
+
+            if (distance >= previous_distance) {
+                index_current_pose -= 1;
+                break;
+            } else if (index_current_pose == global_plan_.poses.size() - 1) {
+                break;
+            }
+
+            index_current_pose += 1;
+            previous_distance = distance;
+        }
 
         // Find the point along the path that is closest to the robot.
         // From the closest point, find the lookahead point
 
         geometry_msgs::msg::PoseStamped lookahead_pose;
-        // Search the global_plan_ vector for a point that is closest to the robot
-        for (geometry_msgs::msg::PoseStamped &pose_in_plan : global_plan_.poses) {
-            // Get distance from the pose to the robot's current pos
-            // Check against the lookahead distance
+        size_t index_lookahead_pose = index_current_pose;
+
+        while (index_lookahead_pose < global_plan_.poses.size()) {
+            lookahead_pose = global_plan_.poses[index_lookahead_pose];
+
             double distance = std::hypot(
-                pose_in_plan.pose.position.x - pose.pose.position.x,
-                pose_in_plan.pose.position.y - pose.pose.position.y
+                lookahead_pose.pose.position.x - closest_pose.pose.position.x,
+                lookahead_pose.pose.position.y - closest_pose.pose.position.y
             );
 
             if (distance >= desired_lookahead_dist_) {
-                lookahead_pose = pose_in_plan;
+                break;
+            } else if (index_lookahead_pose == global_plan_.poses.size() - 1) {
+                lookahead_pose = goal_pose;
                 break;
             }
+            index_lookahead_pose += 1;
         }
+
+        // Search the global_plan_ vector for a point that is closest to the robot
+
 
         // Transform the lookahead point into the robot frame to get (x', y')
         double delta_x = lookahead_pose.pose.position.x - pose.pose.position.x;
         double delta_y = lookahead_pose.pose.position.y - pose.pose.position.y;
 
-        double phi_r = getYawFromQuaternion(goal_pose.pose.orientation);
+        double phi_r = getYawFromQuaternion(pose.pose.orientation);
 
         double x_dash = delta_x * std::cos(phi_r) + delta_y * std::sin(phi_r);
         double y_dash = delta_y * std::cos(phi_r) - delta_x * std::sin(phi_r);
@@ -95,16 +136,17 @@ namespace ee4308::turtle
         double curvature = (2 * y_dash) / ((x_dash * x_dash) + (y_dash * y_dash));
 
         // Calc omega from v and c
-        double linear_vel = velocity.linear.x;
+
+        double linear_vel = desired_linear_vel_;
         double angular_vel = linear_vel * curvature;
 
         // Constrain omega to within the largest allowable angular speed
-        if (std::abs(angular_vel) > max_angular_vel_) {
+        if (std::abs(angular_vel) > max_angular_vel_ && angular_vel != 0.0) {
             angular_vel = (angular_vel / std::abs(angular_vel)) * max_angular_vel_;
         }
 
         // Constrain v to within the largest allowable linear speed
-        if (std::abs(linear_vel) > desired_linear_vel_) {
+        if (std::abs(linear_vel) > desired_linear_vel_ && linear_vel != 0.0) {
             linear_vel = (linear_vel / std::abs(linear_vel)) * desired_linear_vel_;
         }
 

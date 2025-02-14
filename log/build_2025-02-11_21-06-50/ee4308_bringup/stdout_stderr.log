@@ -1,0 +1,30 @@
+-- Install configuration: ""
+-- Execute custom install script
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//launch/proj1.launch.py
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//launch/proj1_sim.launch.py
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//launch/proj1_sim_slam.launch.py
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//launch/proj1_slam.launch.py
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//rviz/.gitignore
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//params/proj1.yaml
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//maps/.gitignore
+-- Symlinking: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//maps/my_map_sim.pgm
+-- Symlinking: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//maps/my_map_sim.yaml
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//urdf/turtle_proj1.urdf.xacro
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//worlds/empty_world.world
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup//worlds/turtlebot3_house.world
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ament_index/resource_index/package_run_dependencies/ee4308_bringup
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ament_index/resource_index/parent_prefix_path/ee4308_bringup
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/environment/path.sh
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/environment/path.dsv
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/local_setup.bash
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/local_setup.sh
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/local_setup.zsh
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/local_setup.dsv
+-- Symlinking: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.dsv
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ament_index/resource_index/packages/ee4308_bringup
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/cmake/ee4308_bringupConfig.cmake
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/cmake/ee4308_bringupConfig-version.cmake
+-- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.xml

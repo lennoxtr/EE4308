@@ -1,0 +1,6 @@
+Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lennoxtr/EE4308/Lab_1/src/ee4308_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core
+Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lennoxtr/EE4308/Lab_1/src/ee4308_core -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core
+Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_core -- -j6 -l6
+Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_core -- -j6 -l6
+Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_core
+Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_core

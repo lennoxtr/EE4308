@@ -1,0 +1,489 @@
+[0.097s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.097s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x72b22f269ea0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x72b22f2699f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x72b22f2699f0>>, mixin_verb=('build',))
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.250s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lennoxtr/EE4308/Lab_1'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extensions ['ignore', 'ignore_ament_install']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'ignore'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'ignore_ament_install'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extensions ['colcon_pkg']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'colcon_pkg'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extensions ['colcon_meta']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'colcon_meta'
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extensions ['ros']
+[0.260s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'ros'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extensions ['cmake', 'python']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'cmake'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'python'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extensions ['python_setup_py']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(docs/img) by extension 'python_setup_py'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.261s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'ignore'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'ignore_ament_install'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['colcon_pkg']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'colcon_pkg'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['colcon_meta']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'colcon_meta'
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extensions ['ros']
+[0.262s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_bringup) by extension 'ros'
+[0.264s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ee4308_bringup' with type 'ros.ament_cmake' and name 'ee4308_bringup'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extensions ['ignore', 'ignore_ament_install']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extension 'ignore'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extension 'ignore_ament_install'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extensions ['colcon_pkg']
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extension 'colcon_pkg'
+[0.264s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extensions ['colcon_meta']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extension 'colcon_meta'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extensions ['ros']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_core) by extension 'ros'
+[0.265s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ee4308_core' with type 'ros.ament_cmake' and name 'ee4308_core'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extensions ['ignore', 'ignore_ament_install']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extension 'ignore'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extension 'ignore_ament_install'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extensions ['colcon_pkg']
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extension 'colcon_pkg'
+[0.265s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extensions ['colcon_meta']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extension 'colcon_meta'
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extensions ['ros']
+[0.266s] Level 1:colcon.colcon_core.package_identification:_identify(src/ee4308_turtle) by extension 'ros'
+[0.267s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ee4308_turtle' with type 'ros.ament_cmake' and name 'ee4308_turtle'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extensions ['ignore', 'ignore_ament_install']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extension 'ignore'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extension 'ignore_ament_install'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extensions ['colcon_pkg']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extension 'colcon_pkg'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extensions ['colcon_meta']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extension 'colcon_meta'
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extensions ['ros']
+[0.267s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_cartographer) by extension 'ros'
+[0.268s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_cartographer' with type 'ros.ament_cmake' and name 'turtlebot3_cartographer'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extension 'ignore'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extension 'ignore_ament_install'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extensions ['colcon_pkg']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extension 'colcon_pkg'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extensions ['colcon_meta']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extension 'colcon_meta'
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extensions ['ros']
+[0.268s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_gazebo) by extension 'ros'
+[0.269s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_gazebo' with type 'ros.ament_cmake' and name 'turtlebot3_gazebo'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ignore', 'ignore_ament_install']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ignore_ament_install'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_pkg']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_pkg'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['colcon_meta']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'colcon_meta'
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extensions ['ros']
+[0.269s] Level 1:colcon.colcon_core.package_identification:_identify(src/turtlebot3_simulations) by extension 'ros'
+[0.270s] DEBUG:colcon.colcon_core.package_identification:Package 'src/turtlebot3_simulations' with type 'ros.ament_cmake' and name 'turtlebot3_simulations'
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.270s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.295s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.297s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/lennoxtr/EE4308/Lab_1/install
+[0.299s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 433 installed packages in /opt/ros/humble
+[0.300s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_target' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.349s] DEBUG:colcon.colcon_core.verb:Building package 'ee4308_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup', 'merge_install': False, 'path': '/home/lennoxtr/EE4308/Lab_1/src/ee4308_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'cmake_args' from command line to 'None'
+[0.349s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'cmake_target' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'cmake_clean_cache' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'cmake_clean_first' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'cmake_force_configure' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'ament_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'catkin_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'ee4308_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.350s] DEBUG:colcon.colcon_core.verb:Building package 'ee4308_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core', 'merge_install': False, 'path': '/home/lennoxtr/EE4308/Lab_1/src/ee4308_core', 'symlink_install': False, 'test_result_base': None}
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_cache' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_clean_first' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'cmake_force_configure' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'ament_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_cartographer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.350s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_cartographer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer', 'merge_install': False, 'path': '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_cartographer', 'symlink_install': False, 'test_result_base': None}
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.350s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.351s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo', 'merge_install': False, 'path': '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'cmake_args' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'cmake_target' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'cmake_clean_cache' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'cmake_clean_first' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'cmake_force_configure' from command line to 'False'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'ament_cmake_args' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'catkin_cmake_args' from command line to 'None'
+[0.351s] Level 5:colcon.colcon_core.verb:set package 'ee4308_turtle' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.351s] DEBUG:colcon.colcon_core.verb:Building package 'ee4308_turtle' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle', 'merge_install': False, 'path': '/home/lennoxtr/EE4308/Lab_1/src/ee4308_turtle', 'symlink_install': False, 'test_result_base': None}
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_cache' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_clean_first' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'cmake_force_configure' from command line to 'False'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'ament_cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_cmake_args' from command line to 'None'
+[0.352s] Level 5:colcon.colcon_core.verb:set package 'turtlebot3_simulations' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.352s] DEBUG:colcon.colcon_core.verb:Building package 'turtlebot3_simulations' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations', 'merge_install': False, 'path': '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_simulations', 'symlink_install': False, 'test_result_base': None}
+[0.352s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.353s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.353s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lennoxtr/EE4308/Lab_1/src/ee4308_core' with build type 'ament_cmake'
+[0.353s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lennoxtr/EE4308/Lab_1/src/ee4308_core'
+[0.355s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.355s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.355s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.359s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_gazebo' with build type 'ament_cmake'
+[0.359s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_gazebo'
+[0.359s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.363s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lennoxtr/EE4308/Lab_1/src/ee4308_bringup' with build type 'ament_cmake'
+[0.363s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lennoxtr/EE4308/Lab_1/src/ee4308_bringup'
+[0.363s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.363s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.367s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_cartographer' with build type 'ament_cmake'
+[0.367s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_cartographer'
+[0.368s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.368s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.377s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_core -- -j6 -l6
+[0.382s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo -- -j6 -l6
+[0.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup -- -j6 -l6
+[0.390s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer -- -j6 -l6
+[0.421s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup -- -j6 -l6
+[0.430s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup
+[0.431s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_core -- -j6 -l6
+[0.433s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_core
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer -- -j6 -l6
+[0.435s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer
+[0.457s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[0.458s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_cartographer
+[0.460s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer' for CMake module files
+[0.461s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer' for CMake config files
+[0.461s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[0.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[0.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[0.463s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/bin'
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/lib/python3.10/site-packages'
+[0.464s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/bin'
+[0.464s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[0.465s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[0.468s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[0.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[0.470s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[0.471s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_cartographer)
+[0.471s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer' for CMake module files
+[0.472s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer' for CMake config files
+[0.472s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_cartographer', 'cmake_prefix_path')
+[0.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.ps1'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.dsv'
+[0.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/hook/cmake_prefix_path.sh'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/bin'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/lib/pkgconfig/turtlebot3_cartographer.pc'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/lib/python3.10/site-packages'
+[0.474s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/bin'
+[0.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.ps1'
+[0.475s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.dsv'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.sh'
+[0.476s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.bash'
+[0.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/turtlebot3_cartographer/package.zsh'
+[0.477s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer/share/colcon-core/packages/turtlebot3_cartographer)
+[0.478s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_bringup)
+[0.478s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup' for CMake module files
+[0.479s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup
+[0.479s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup' for CMake config files
+[0.479s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_bringup', 'cmake_prefix_path')
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.ps1'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.dsv'
+[0.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.sh'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/bin'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/lib/pkgconfig/ee4308_bringup.pc'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/lib/python3.10/site-packages'
+[0.481s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/bin'
+[0.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.ps1'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.dsv'
+[0.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.sh'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.bash'
+[0.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.zsh'
+[0.484s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/colcon-core/packages/ee4308_bringup)
+[0.484s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_bringup)
+[0.484s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup' for CMake module files
+[0.485s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup' for CMake config files
+[0.485s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_bringup', 'cmake_prefix_path')
+[0.485s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.ps1'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.dsv'
+[0.486s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/hook/cmake_prefix_path.sh'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/bin'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/lib/pkgconfig/ee4308_bringup.pc'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/lib/python3.10/site-packages'
+[0.487s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/bin'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.ps1'
+[0.488s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.dsv'
+[0.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.sh'
+[0.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.bash'
+[0.490s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/ee4308_bringup/package.zsh'
+[0.490s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup/share/colcon-core/packages/ee4308_bringup)
+[0.491s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_core)
+[0.491s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core' for CMake module files
+[0.492s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_core' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_core
+[0.492s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core' for CMake config files
+[0.493s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_core', 'cmake_prefix_path')
+[0.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/hook/cmake_prefix_path.ps1'
+[0.493s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/hook/cmake_prefix_path.dsv'
+[0.494s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/hook/cmake_prefix_path.sh'
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/bin'
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/lib/pkgconfig/ee4308_core.pc'
+[0.494s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/lib/python3.10/site-packages'
+[0.495s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/bin'
+[0.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.ps1'
+[0.495s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.dsv'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.sh'
+[0.496s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.bash'
+[0.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.zsh'
+[0.497s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/colcon-core/packages/ee4308_core)
+[0.498s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_core)
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core' for CMake module files
+[0.498s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core' for CMake config files
+[0.498s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_core', 'cmake_prefix_path')
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/hook/cmake_prefix_path.ps1'
+[0.499s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/hook/cmake_prefix_path.dsv'
+[0.500s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/hook/cmake_prefix_path.sh'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/bin'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/lib/pkgconfig/ee4308_core.pc'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/lib/python3.10/site-packages'
+[0.500s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/bin'
+[0.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.ps1'
+[0.502s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.dsv'
+[0.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.sh'
+[0.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.bash'
+[0.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/ee4308_core/package.zsh'
+[0.504s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/ee4308_core/share/colcon-core/packages/ee4308_core)
+[0.504s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lennoxtr/EE4308/Lab_1/src/ee4308_turtle' with build type 'ament_cmake'
+[0.504s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lennoxtr/EE4308/Lab_1/src/ee4308_turtle'
+[0.505s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.505s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle -- -j6 -l6
+[0.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo -- -j6 -l6
+[0.569s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo
+[0.601s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[0.601s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo' for CMake module files
+[0.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_gazebo
+[0.602s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo' for CMake config files
+[0.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[0.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[0.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[0.604s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/lib'
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/bin'
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[0.605s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/bin'
+[0.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[0.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[0.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[0.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[0.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[0.608s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_gazebo)
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo' for CMake module files
+[0.608s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo' for CMake config files
+[0.609s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_gazebo', 'cmake_prefix_path')
+[0.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.ps1'
+[0.610s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.dsv'
+[0.610s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/hook/cmake_prefix_path.sh'
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/lib'
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/bin'
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/lib/pkgconfig/turtlebot3_gazebo.pc'
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/lib/python3.10/site-packages'
+[0.611s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/bin'
+[0.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.ps1'
+[0.612s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.dsv'
+[0.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.sh'
+[0.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.bash'
+[0.614s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/turtlebot3_gazebo/package.zsh'
+[0.614s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo/share/colcon-core/packages/turtlebot3_gazebo)
+[0.615s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_simulations' with build type 'ament_cmake'
+[0.615s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lennoxtr/EE4308/Lab_1/src/turtlebot3_simulations'
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.624s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations -- -j6 -l6
+[0.662s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations' returned '0': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations -- -j6 -l6
+[0.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations
+[0.683s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_simulations)
+[0.683s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations' for CMake module files
+[0.684s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations' returned '0': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/turtlebot3_simulations
+[0.684s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations' for CMake config files
+[0.684s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_simulations', 'cmake_prefix_path')
+[0.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.ps1'
+[0.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.dsv'
+[0.685s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.sh'
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/bin'
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/lib/pkgconfig/turtlebot3_simulations.pc'
+[0.686s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/lib/python3.10/site-packages'
+[0.687s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/bin'
+[0.687s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.ps1'
+[0.687s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.sh'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.bash'
+[0.688s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.zsh'
+[0.689s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/colcon-core/packages/turtlebot3_simulations)
+[0.690s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(turtlebot3_simulations)
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations' for CMake module files
+[0.690s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations' for CMake config files
+[0.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('turtlebot3_simulations', 'cmake_prefix_path')
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.ps1'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.dsv'
+[0.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/hook/cmake_prefix_path.sh'
+[0.693s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/bin'
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/lib/pkgconfig/turtlebot3_simulations.pc'
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/lib/python3.10/site-packages'
+[0.694s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/bin'
+[0.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.ps1'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.dsv'
+[0.695s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.sh'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.bash'
+[0.696s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/turtlebot3_simulations/package.zsh'
+[0.696s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations/share/colcon-core/packages/turtlebot3_simulations)
+[6.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle' returned '0': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle -- -j6 -l6
+[6.006s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle
+[6.027s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_turtle)
+[6.028s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle' for CMake module files
+[6.028s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle' returned '0': CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_simulations:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_msgs:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_gazebo:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_description:/home/lennoxtr/EE4308/Lab_1/install/turtlebot3_cartographer:/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle:/home/lennoxtr/EE4308/Lab_1/install/ee4308_bringup:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle
+[6.029s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle' for CMake config files
+[6.029s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle', 'cmake_prefix_path')
+[6.029s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/cmake_prefix_path.ps1'
+[6.029s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/cmake_prefix_path.dsv'
+[6.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/cmake_prefix_path.sh'
+[6.030s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib'
+[6.030s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle', 'ld_library_path_lib')
+[6.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/ld_library_path_lib.ps1'
+[6.031s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/ld_library_path_lib.dsv'
+[6.031s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/ld_library_path_lib.sh'
+[6.032s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/bin'
+[6.032s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib/pkgconfig/ee4308_turtle.pc'
+[6.032s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib/python3.10/site-packages'
+[6.033s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/bin'
+[6.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.ps1'
+[6.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.dsv'
+[6.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.sh'
+[6.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.bash'
+[6.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.zsh'
+[6.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/colcon-core/packages/ee4308_turtle)
+[6.035s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ee4308_turtle)
+[6.035s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle' for CMake module files
+[6.036s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle' for CMake config files
+[6.036s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle', 'cmake_prefix_path')
+[6.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/cmake_prefix_path.ps1'
+[6.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/cmake_prefix_path.dsv'
+[6.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/cmake_prefix_path.sh'
+[6.037s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib'
+[6.037s] Level 1:colcon.colcon_core.shell:create_environment_hook('ee4308_turtle', 'ld_library_path_lib')
+[6.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/ld_library_path_lib.ps1'
+[6.038s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/ld_library_path_lib.dsv'
+[6.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/hook/ld_library_path_lib.sh'
+[6.039s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/bin'
+[6.039s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib/pkgconfig/ee4308_turtle.pc'
+[6.039s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib/python3.10/site-packages'
+[6.039s] Level 1:colcon.colcon_core.environment:checking '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/bin'
+[6.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.ps1'
+[6.040s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.dsv'
+[6.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.sh'
+[6.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.bash'
+[6.041s] INFO:colcon.colcon_core.shell:Creating package script '/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.zsh'
+[6.042s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/colcon-core/packages/ee4308_turtle)
+[6.042s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.042s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.043s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.043s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.048s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.048s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.048s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.063s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.063s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lennoxtr/EE4308/Lab_1/install/local_setup.ps1'
+[6.064s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lennoxtr/EE4308/Lab_1/install/_local_setup_util_ps1.py'
+[6.065s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lennoxtr/EE4308/Lab_1/install/setup.ps1'
+[6.067s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lennoxtr/EE4308/Lab_1/install/local_setup.sh'
+[6.067s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lennoxtr/EE4308/Lab_1/install/_local_setup_util_sh.py'
+[6.068s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lennoxtr/EE4308/Lab_1/install/setup.sh'
+[6.069s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lennoxtr/EE4308/Lab_1/install/local_setup.bash'
+[6.069s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lennoxtr/EE4308/Lab_1/install/setup.bash'
+[6.071s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lennoxtr/EE4308/Lab_1/install/local_setup.zsh'
+[6.071s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lennoxtr/EE4308/Lab_1/install/setup.zsh'

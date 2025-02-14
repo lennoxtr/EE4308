@@ -1,0 +1,17 @@
+[35m[1mConsolidate compiler generated dependencies of target ee4308_turtle_controller[0m
+[ 50%] Built target ee4308_turtle_planner
+[ 75%] [32mBuilding CXX object CMakeFiles/ee4308_turtle_controller.dir/src/controller.cpp.o[0m
+[01m[K/home/lennoxtr/EE4308/Lab_1/src/ee4308_turtle/src/controller.cpp:[m[K In member function ‘[01m[Kvirtual geometry_msgs::msg::TwistStamped ee4308::turtle::Controller::computeVelocityCommands(const PoseStamped&, const Twist&, nav2_core::GoalChecker*)[m[K’:
+[01m[K/home/lennoxtr/EE4308/Lab_1/src/ee4308_turtle/src/controller.cpp:67:40:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Knav2_core::GoalChecker::isGoalReached(const PoseStamped&)[m[K’
+   67 |         if ([01;31m[Kgoal_checker->isGoalReached(pose)[m[K) {
+      |             [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/nav2_core/controller.hpp:50[m[K,
+                 from [01m[K/home/lennoxtr/EE4308/Lab_1/src/ee4308_turtle/include/ee4308_turtle/controller.hpp:9[m[K,
+                 from [01m[K/home/lennoxtr/EE4308/Lab_1/src/ee4308_turtle/src/controller.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/nav2_core/goal_checker.hpp:86:16:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual bool nav2_core::GoalChecker::isGoalReached(const Pose&, const Pose&, const Twist&)[m[K’
+   86 |   virtual bool [01;36m[KisGoalReached[m[K(
+      |                [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/nav2_core/goal_checker.hpp:86:16:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/ee4308_turtle_controller.dir/build.make:76: CMakeFiles/ee4308_turtle_controller.dir/src/controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/ee4308_turtle_controller.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

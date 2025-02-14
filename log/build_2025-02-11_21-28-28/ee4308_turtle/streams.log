@@ -1,0 +1,35 @@
+[0.044s] Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle': AMENT_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle -- -j6 -l6
+[0.085s] [35m[1mConsolidate compiler generated dependencies of target ee4308_turtle_controller[0m
+[0.100s] [ 50%] Built target ee4308_turtle_planner
+[0.102s] [ 75%] [32mBuilding CXX object CMakeFiles/ee4308_turtle_controller.dir/src/controller.cpp.o[0m
+[4.837s] [100%] [32m[1mLinking CXX shared library libee4308_turtle_controller.so[0m
+[5.042s] [100%] Built target ee4308_turtle_controller
+[5.053s] Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle' returned '0': AMENT_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/opt/ros/humble /usr/bin/cmake --build /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle -- -j6 -l6
+[5.053s] Invoking command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle': AMENT_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle
+[5.060s] -- Install configuration: "Release"
+[5.061s] -- Execute custom install script
+[5.061s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib/libee4308_turtle_controller.so
+[5.061s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle//ee4308_turtle_controller.xml
+[5.062s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/lib/libee4308_turtle_planner.so
+[5.062s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle//ee4308_turtle_planner.xml
+[5.062s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/include//ee4308_turtle/controller.hpp
+[5.063s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/include//ee4308_turtle/planner.hpp
+[5.063s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ament_index/resource_index/package_run_dependencies/ee4308_turtle
+[5.064s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ament_index/resource_index/parent_prefix_path/ee4308_turtle
+[5.064s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/environment/ament_prefix_path.sh
+[5.064s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/environment/ament_prefix_path.dsv
+[5.064s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/environment/path.sh
+[5.064s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/environment/path.dsv
+[5.065s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/local_setup.bash
+[5.065s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/local_setup.sh
+[5.065s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/local_setup.zsh
+[5.065s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/local_setup.dsv
+[5.065s] -- Symlinking: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.dsv
+[5.073s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ament_index/resource_index/packages/ee4308_turtle
+[5.073s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ament_index/resource_index/nav2_core__pluginlib__plugin/ee4308_turtle
+[5.073s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.074s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.074s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/cmake/ee4308_turtleConfig.cmake
+[5.074s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/cmake/ee4308_turtleConfig-version.cmake
+[5.074s] -- Up-to-date symlink: /home/lennoxtr/EE4308/Lab_1/install/ee4308_turtle/share/ee4308_turtle/package.xml
+[5.076s] Invoked command in '/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle' returned '0': AMENT_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/lennoxtr/EE4308/Lab_1/install/ee4308_core:/opt/ros/humble /usr/bin/cmake --install /home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle
