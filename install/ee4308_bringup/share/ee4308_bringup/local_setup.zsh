@@ -1,1 +1,0 @@
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/ament_cmake_environment_hooks/local_setup.zsh

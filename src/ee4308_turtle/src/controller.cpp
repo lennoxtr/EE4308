@@ -32,7 +32,7 @@ namespace ee4308::turtle
 
         // initialize parameters
         initParam(node_, plugin_name_ + ".desired_linear_vel", desired_linear_vel_, 0.2);
-        initParam(node_, plugin_name_ + ".desired_lookahead_dist", desired_lookahead_dist_, 1.0);
+        initParam(node_, plugin_name_ + ".desired_lookahead_dist", desired_lookahead_dist_, 0.4);
         initParam(node_, plugin_name_ + ".max_angular_vel", max_angular_vel_, 1.0);
         initParam(node_, plugin_name_ + ".max_linear_vel", max_linear_vel_, 0.22);
         initParam(node_, plugin_name_ + ".xy_goal_thres", xy_goal_thres_, 0.05);
@@ -69,9 +69,12 @@ namespace ee4308::turtle
             goal_pose.pose.position.y - pose.pose.position.y
         );
 
+        // Check if already arrived at goal
         if (xy_goal_thres_ > distance) {
             return writeCmdVel(0, 0);
         }
+
+        // Find the point along the path that is closest to the robot.
 
         geometry_msgs::msg::PoseStamped closest_pose;
 
@@ -86,9 +89,11 @@ namespace ee4308::turtle
                 closest_pose.pose.position.y - pose.pose.position.y
             );
 
+            // If distance decreases, the current pose is still behind the robot
             if (distance >= previous_distance) {
                 index_current_pose -= 1;
                 break;
+            
             } else if (index_current_pose == global_plan_.poses.size() - 1) {
                 break;
             }
@@ -97,7 +102,6 @@ namespace ee4308::turtle
             previous_distance = distance;
         }
 
-        // Find the point along the path that is closest to the robot.
         // From the closest point, find the lookahead point
 
         geometry_msgs::msg::PoseStamped lookahead_pose;
@@ -113,15 +117,9 @@ namespace ee4308::turtle
 
             if (distance >= desired_lookahead_dist_) {
                 break;
-            } else if (index_lookahead_pose == global_plan_.poses.size() - 1) {
-                lookahead_pose = goal_pose;
-                break;
             }
             index_lookahead_pose += 1;
         }
-
-        // Search the global_plan_ vector for a point that is closest to the robot
-
 
         // Transform the lookahead point into the robot frame to get (x', y')
         double delta_x = lookahead_pose.pose.position.x - pose.pose.position.x;
@@ -141,22 +139,14 @@ namespace ee4308::turtle
         double angular_vel = linear_vel * curvature;
 
         // Constrain omega to within the largest allowable angular speed
-        if (std::abs(angular_vel) > max_angular_vel_ && angular_vel != 0.0) {
-            angular_vel = (angular_vel / std::abs(angular_vel)) * max_angular_vel_;
+        if (std::abs(angular_vel) > max_angular_vel_) {
+            angular_vel = ee4308::sgn(angular_vel) * max_angular_vel_;
         }
 
         // Constrain v to within the largest allowable linear speed
-        if (std::abs(linear_vel) > desired_linear_vel_ && linear_vel != 0.0) {
-            linear_vel = (linear_vel / std::abs(linear_vel)) * desired_linear_vel_;
+        if (std::abs(linear_vel) > desired_linear_vel_) {
+            linear_vel = ee4308::sgn(linear_vel) * desired_linear_vel_;
         }
-
-        // Return (v, omega)
-
-        // get lookahead?
-        //geometry_msgs::msg::PoseStamped lookahead_pose = goal_pose;
-
-        //double linear_vel = 0 * (lookahead_pose.pose.position.x - pose.pose.position.x);
-        //double angular_vel = 0 * getYawFromQuaternion(goal_pose.pose.orientation);
 
         return writeCmdVel(linear_vel, angular_vel);
     }

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/lennoxtr/EE4308/Lab_1/build/ee4308_turtle/libee4308_turtle_controller.so" "TARGETS" "ee4308_turtle_controller" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")

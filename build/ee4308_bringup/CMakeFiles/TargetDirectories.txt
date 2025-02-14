@@ -1,9 +1,0 @@
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/uninstall.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/ee4308_bringup_uninstall.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/test.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/edit_cache.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/rebuild_cache.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/list_install_components.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/install.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/install/local.dir
-/home/lennoxtr/EE4308/Lab_1/build/ee4308_bringup/CMakeFiles/install/strip.dir
