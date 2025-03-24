@@ -10,7 +10,7 @@ What are problem(s) that could occur, when...
 3. The linear velocity is too large?
 
 
-4. The lookahead point is to the left or right of the robot, such that $y' \approx 0$?
+4. The lookahead point is to the left or right of the robot, such that $x' \approx 0$?
 
 
 5. The lookahead point is behind the robot, such that $x' < 0$?
